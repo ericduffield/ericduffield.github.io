@@ -2346,6 +2346,13 @@ ol li {
 	transition: transform 0.15s;
 }
 
+@media (max-width: 576px) {
+	.animate {
+		animation: none;
+		transition: none;
+	}
+}
+
 @keyframes animateElement {
 	0% {
 		transform: translate(0px, 50px);

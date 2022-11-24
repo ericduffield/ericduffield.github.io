@@ -4,11 +4,11 @@ function slide() {
 
     if (menu.style.top == "0%") {
         menu.style.top = "-100vh";
-        // document.documentElement.style.overflow = 'scroll';
+        document.documentElement.style.overflow = 'auto';
     }
     else {
         menu.style.top = "0%";
-        // document.documentElement.style.overflow = 'hidden';
+        document.documentElement.style.overflow = 'hidden';
     }
 
     let hamburger = document.getElementById("hamburger");
