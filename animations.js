@@ -3,7 +3,7 @@ function slide() {
     let menu = document.getElementById("menu");
 
     if (menu.style.top == "0%") {
-        menu.style.top = "-100vh";
+        menu.style.top = "-100%";
         document.documentElement.style.overflow = 'auto';
     }
     else {

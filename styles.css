@@ -3081,8 +3081,8 @@ table td {
 #menu {
 	position: fixed;
 	width: 100vw;
-	height: 100vh;
-	top: -100vh;
+	height: 100%;
+	top: -100%;
 	z-index: 10;
 	list-style-type: none;
 	-webkit-transition: 0.5s ease-in-out;
