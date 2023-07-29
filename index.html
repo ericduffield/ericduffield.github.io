@@ -1,463 +1,801 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, height=device-height">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, height=device-height">
 
-    <title>Eric Duffield</title>
-    <meta name='description' content=''>
+        <title>Eric Duffield - Portfolio</title>
+        <meta name='description' content=''>
 
-    <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="./styles.css">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
 
-    <link rel="preload"
-        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap"
-        as="style">
+        <link rel="preload"
+            href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap"
+            as="style">
 
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap"
-        rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap"
+            rel="stylesheet">
 
-    <!-- Ionicons -->
-    <link rel="preload" href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css" as="style">
+        <!-- Ionicons -->
+        <link rel="preload" href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css" as="style">
 
-    <link href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css" rel="stylesheet">
+        <link href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css" rel="stylesheet">
 
-    <script type="text/javascript" src="./animations.js" defer></script>
+        <script type="text/javascript" src="./animations.js" defer></script>
 
-</head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-<ul id="menu">
-    <li class="menu__item">
-        <a href="#home">Home</a>
-    </li>
-    <li class="menu__item">
-        <a href="#projects">Projects</a>
-    </li>
-    <li class="menu__item">
-        <a href="#contact">Contact</a>
-    </li>
-</ul>
+    </head>
 
-
-<body>
-
-    <div class="global-wrap" id="global-wrap">
-
-        <header id="header" class="header header--dark">
-            <div class="container">
-                <div class="row">
-                    <div class="header__inner col col-12">
-
-                        <div class="logo">
-                            <a class="logo__link" href="/">
-                                Eric Duffield
-                            </a>
-                        </div>
-
-                        <div id="hamburgerDiv">
-                            <div id="hamburger">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>
-
-                        <nav class="main-nav" aria-label="Main menu">
-                            <div class="main-nav__box">
-                                <ul class="nav__list list-reset">
-
-                                    <li class="nav__item">
-                                        <a href="#header" class="nav__link active-link">Home</a>
-                                    </li>
-
-                                    <li class="nav__item">
-                                        <a href="#projects" class="nav__link">Projects</a>
-                                    </li>
-
-                                    <li class="nav__item">
-                                        <a href="#contact" class="nav__link">Contact</a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </nav>
-                        <input id="menuToggle" onclick="slide()" readonly />
-
-                    </div>
-                </div>
-            </div>
-            <div class="header__overlay"></div>
-        </header>
+    <ul id="menu">
+        <li class="menu__item">
+            <a href="#header">Home</a>
+        </li>
+        <li class="menu__item">
+            <a href="#projects">Projects</a>
+        </li>
+        <li class="menu__item">
+            <a href="#contact">Contact</a>
+        </li>
+    </ul>
 
 
-        <main class="content" aria-label="Content">
-            <section class="hero">
+    <body>
+
+        <div class="global-wrap" id="global-wrap">
+
+            <header id="header" class="header header--dark">
                 <div class="container">
                     <div class="row">
-                        <div class="col footer__content">
-                            <div class="hero__inner">
-                                <h1 class="hero__title">Hi I'm Eric Duffield. I'm a software developer from Montreal,
-                                    Québec.
-                                </h1>
-                                <h3 class="hero__description">
-                                    I am currently studying Computer Science Technology at John Abbott College and
-                                    working part time as a software developer.
-                                </h3>
+                        <div class="header__inner col col-12">
+
+                            <div class="logo">
+                                <a class="logo__link" href="https://ericduffield.github.io/">
+                                    Eric Duffield
+                                </a>
                             </div>
+
+                            <div id="hamburgerDiv">
+                                <div id="hamburger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+
+                            <nav class="main-nav" aria-label="Main menu">
+                                <div class="main-nav__box">
+                                    <ul class="nav__list list-reset">
+
+                                        <li class="nav__item">
+                                            <a href="#header" class="nav__link active-link">Home</a>
+                                        </li>
+
+                                        <li class="nav__item">
+                                            <a href="#projects" class="nav__link">Projects</a>
+                                        </li>
+
+                                        <li class="nav__item">
+                                            <a href="#contact" class="nav__link">Contact</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </nav>
+                            <input id="menuToggle" onclick="slide()" readonly />
+
                         </div>
                     </div>
                 </div>
+                <div class="header__overlay"></div>
+            </header>
 
 
-
-                <div class="featured-section" id="projects">
-
+            <main class="content" aria-label="Content">
+                <section class="hero">
                     <div class="container">
                         <div class="row">
-                            <div class="col col-12">
-                                <div class="featured__info">
-                                    <div class="featured__head">
-                                        <h2 class="featured__title">Check out some of my projects</h2>
-
-                                        </ul>
-                                    </div>
+                            <div class="col footer__content">
+                                <div class="hero__inner">
+                                    <h1 class="hero__title">Hi I'm Eric Duffield. I'm a Software Developer from
+                                        Montreal,
+                                        Québec.
+                                    </h1>
+                                    <h3 class="hero__description">
+                                        I am working full-time as a Software Developer for Morgan Stanley and studying
+                                        Computer Science part-time at Concordia
+                                        University.
+                                    </h3>
+                                    <a id="resume" href="./DuffieldEricCV2023.pdf" class="button button--primary"
+                                        target=”_blank”>My
+                                        Resume</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="featured__slider animate">
+
+
+                    <div class="featured-section" id="projects">
+
                         <div class="container">
                             <div class="row">
-                                <div class="posts-slider">
+                                <div class="col col-12">
+                                    <div class="featured__info">
+                                        <div class="featured__head">
+                                            <h2 class="featured__title">Check out some of my projects</h2>
 
-
-
-                                    <div class="article col col-4 col-d-6 col-t-12">
-                                        <div class="article__inner">
-
-                                            <div class="article__head">
-
-                                                <a class="article__image" href="/">
-                                                    <img class="" data-src="./Projects/DuffCoin/preview.jpg"
-                                                        src="./Projects/DuffCoin/preview.jpg" alt="Duff Coin">
-                                                </a>
-
-                                            </div>
-
-                                            <div class="article__content">
-
-                                                <div class="article-tags__box">
-
-                                                    <p class="article__tag">web</p>
-                                                    <p class="article__tag">cryptocurrency</p>
-                                                    <p class="article__tag">NFT</p>
-
-                                                </div>
-
-                                                <h2 class="article__title">
-                                                    <a href="">Duff
-                                                        Coin</a>
-                                                </h2>
-
-                                                <p class="article__excerpt">
-                                                    I created a cryptocurrency token called <strong>DuffCoin</strong>
-                                                    and a website for it. I made this coin for fun and to learn how
-                                                    smart contracts work. I also made an NFT collection to go with the
-                                                    coin.
-                                                </p>
-
-                                                <div class="article__buttons">
-                                                    <a href="https://duffcoincrypto.com/">Website</a>
-                                                    <a href="https://github.com/ericduffield/DuffCoin">Github</a>
-                                                </div>
-
-                                            </div>
-
+                                            </ul>
                                         </div>
                                     </div>
-
-                                    <div class="article col col-4 col-d-6 col-t-12">
-                                        <div class="article__inner">
-
-                                            <div class="article__head">
-
-                                                <a class="article__image" href="/">
-                                                    <img class="" data-src="./Projects/BetterStake/preview.jpg"
-                                                        src="./Projects/BetterStake/preview.jpg" alt="Duff Coin">
-                                                </a>
-                                            </div>
-
-                                            <div class="article__content">
-
-                                                <div class="article-tags__box">
-
-                                                    <p class="article__tag">web</p>
-                                                    <p class="article__tag">cryptocurrency</p>
-                                                    <p class="article__tag">business</p>
-
-                                                </div>
-
-                                                <h2 class="article__title">
-                                                    <a href="">BetterStake</a>
-                                                </h2>
-
-                                                <p class="article__excerpt">
-                                                    A friend and I came up with an idea for a cryptocurrency staking
-                                                    platform called <strong>BetterStake</strong>. This is a concept
-                                                    website I created for this idea.
-                                                </p>
-
-                                                <div class="article__buttons">
-                                                    <a href="https://betterstake.netlify.app/">Website</a>
-                                                    <a href="https://github.com/ericduffield/BetterStake">Github</a>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="article col col-4 col-d-6 col-t-12">
-                                        <div class="article__inner">
-
-                                            <div class="article__head">
-
-                                                <a class="article__image" href="/">
-                                                    <img class="" data-src="./Projects/C&PGame/preview.png"
-                                                        src="./Projects/C&PGame/preview.png" alt="C&P Game">
-                                                </a>
-
-                                            </div>
-
-                                            <div class="article__content">
-
-                                                <div class="article-tags__box">
-
-                                                    <p class="article__tag">game</p>
-                                                    <p class="article__tag">unity</p>
-                                                    <p class="article__tag">group</p>
-
-                                                </div>
-
-                                                <h2 class="article__title">
-                                                    <a href="">C&P Game</a>
-                                                </h2>
-
-                                                <p class="article__excerpt">
-                                                    A group of friends and I made a game for an english class where you
-                                                    can play as the protagonist in one of the scenes from the
-                                                    book we were reading.
-                                                    We created this game using c# and Unity.
-                                                </p>
-
-                                                <div class="article__buttons">
-                                                    <a href="https://jofflobster.itch.io/crime-and-punishment">Play</a>
-                                                    <a
-                                                        href="https://github.com/jeffbrin/CrimeAndPunishmentGame">Github</a>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-
-                                    <div class="article col col-4 col-d-6 col-t-12">
-                                        <div class="article__inner">
-
-                                            <div class="article__head">
-
-                                                <a class="article__image" href="/">
-                                                    <img class="" data-src="./Projects/SkiShop/preview.png"
-                                                        src="./Projects/SkiShop/preview.png" alt="Ski Shop">
-                                                </a>
-
-                                            </div>
-
-                                            <div class="article__content">
-
-                                                <div class="article-tags__box">
-
-                                                    <p class="article__tag">MVC</p>
-                                                    <p class="article__tag">web</p>
-                                                    <p class="article__tag">store</p>
-                                                    <p class="article__tag">group</p>
-
-                                                </div>
-
-                                                <h2 class="article__title">
-                                                    <a href="">Rental Ski Shop</a>
-                                                </h2>
-
-                                                <p class="article__excerpt">
-                                                    For a final project in my web development class, myself and 2 other
-                                                    students created a website
-                                                    for a Ski Rental Store. We used a docker container to hold a MySQL
-                                                    database. We implemented user logins and account creation as well as
-                                                    admin accounts that can perform CRUD operations on the ski
-                                                    equipement in the database.
-                                                </p>
-
-                                                <div class="article__buttons">
-                                                    <a
-                                                        href="https://github.com/ericduffield/Ski-Rental-Website">Github</a>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="article col col-4 col-d-6 col-t-12">
-                                        <div class="article__inner">
-
-                                            <div class="article__head">
-
-                                                <a class="article__image" href="/">
-                                                    <img class="" data-src="./Projects/Website/preview.jpg"
-                                                        src="./Projects/Website/preview.jpg" alt="Personal Website">
-                                                </a>
-
-                                            </div>
-
-                                            <div class="article__content">
-
-                                                <div class="article-tags__box">
-
-                                                    <p class="article__tag">personal</p>
-                                                    <p class="article__tag">web</p>
-                                                    <p class="article__tag">store</p>
-
-                                                </div>
-
-                                                <h2 class="article__title">
-                                                    <a href="">Personal Website</a>
-                                                </h2>
-
-                                                <p class="article__excerpt">
-                                                    I have a personal website where you can learn more about me.
-                                                    I created this website to show off some of the projects that I have
-                                                    worked on. The projects page has links to the
-                                                    websites of a couple projects that I have created. The website is
-                                                    also used to sell clothes. I don't expect anyone to
-                                                    buy clothes directly on it, but I created this page
-                                                    for fun to figure out how to implement an online store. If you
-                                                    really wanted to you could buy directly from the site as
-                                                    paypal checkout is integrated and it is fully functional.
-                                                </p>
-
-                                                <div class="article__buttons">
-                                                    <a href="https://ericduffield.com/">Website</a>
-                                                    <a
-                                                        href="https://github.com/ericduffield/ericduffield.com">Github</a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-
                                 </div>
                             </div>
                         </div>
+
+                        <div class="featured__slider animate">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="posts-slider">
+
+                                        <div class="article col col-4 col-d-6 col-t-12">
+                                            <div class="article__inner">
+
+                                                <div class="article__head">
+
+                                                    <a class="article__image"
+                                                        href="https://github.com/ericduffield/Hue-Game">
+                                                        <img class="" data-src="./Projects/Hue/preview.png"
+                                                            src="./Projects/Hue/preview.png" alt="Hue Game">
+                                                    </a>
+                                                </div>
+
+                                                <div class="article__content">
+
+                                                    <div class="article-tags__box">
+
+                                                        <p class="article__tag">game</p>
+                                                        <p class="article__tag">javascript</p>
+                                                        <p class="article__tag">team</p>
+
+                                                    </div>
+
+                                                    <h2 class="article__title">
+                                                        <a href="https://github.com/ericduffield/Hue-Game">Hue Game</a>
+                                                    </h2>
+
+                                                    <p class="article__excerpt">
+                                                        For the final project in my Game Programming class, another
+                                                        student and I created a remake of a game called
+                                                        <strong>Hue</strong>. The game is a side-scroller
+                                                        puzzle platformer, where the player goes through the story
+                                                        trying to find his mother that got lost in the colour world. The
+                                                        game works by interacting with colours that the player
+                                                        slowly collects. Once a player has collected a colour, they can
+                                                        use it to change the background colour to help solve
+                                                        puzzles.
+                                                    </p>
+                                                    <a class="readMore">Read more</a>
+
+                                                    <div class="article__buttons">
+                                                        <a href="https://github.com/ericduffield/Hue-Game">Github</a>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="article col col-4 col-d-6 col-t-12">
+                                            <div class="article__inner">
+
+                                                <div class="article__head">
+
+                                                    <a class="article__image"
+                                                        href="https://github.com/ericduffield/Ski-Rental-Website">
+                                                        <img class="" data-src="./Projects/SkiShop/preview.png"
+                                                            src="./Projects/SkiShop/preview.png" alt="Ski Shop">
+                                                    </a>
+
+                                                </div>
+
+                                                <div class="article__content">
+
+                                                    <div class="article-tags__box">
+
+                                                        <p class="article__tag">web</p>
+                                                        <p class="article__tag">store</p>
+                                                        <p class="article__tag">team</p>
+
+                                                    </div>
+
+                                                    <h2 class="article__title">
+                                                        <a href="https://github.com/ericduffield/Ski-Rental-Website">Rental
+                                                            Ski Shop</a>
+                                                    </h2>
+
+                                                    <p class="article__excerpt">
+                                                        For the final project in my Web Development class, my team
+                                                        created a web app for a Ski Rental Store. We used a Docker
+                                                        container to hold a MySQL database, which stored ski product and
+                                                        user information. We implemented user logins, account
+                                                        creation, and ski equipment booking.
+                                                        Admin accounts could also perform CRUD operations on the ski
+                                                        equipment in the database.
+                                                    </p>
+                                                    <a class="readMore">Read more</a>
+
+                                                    <div class="article__buttons">
+                                                        <a
+                                                            href="https://github.com/ericduffield/Ski-Rental-Website">Github</a>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="article col col-4 col-d-6 col-t-12">
+                                            <div class="article__inner">
+
+                                                <div class="article__head">
+
+                                                    <a class="article__image" href="https://betterstake.netlify.app/">
+                                                        <img class="" data-src="./Projects/BetterStake/preview.jpg"
+                                                            src="./Projects/BetterStake/preview.jpg" alt="Duff Coin">
+                                                    </a>
+                                                </div>
+
+                                                <div class="article__content">
+
+                                                    <div class="article-tags__box">
+
+                                                        <p class="article__tag">web3</p>
+                                                        <p class="article__tag">cryptocurrency</p>
+                                                        <p class="article__tag">business</p>
+
+                                                    </div>
+
+                                                    <h2 class="article__title">
+                                                        <a href="https://betterstake.netlify.app/">BetterStake</a>
+                                                    </h2>
+
+                                                    <p class="article__excerpt">
+                                                        A friend and I came up with an idea for a cryptocurrency staking
+                                                        platform called <strong>BetterStake</strong>. This is a
+                                                        concept that never got off the ground, but I created a website
+                                                        as a concept for the idea. It features a portfolio
+                                                        dashboard where the user can view their assets as well as a
+                                                        table of cryptocurrencies displaying their balance, current
+                                                        price, and 24-hour change which are fetched from an API.
+                                                    </p>
+                                                    <a class="readMore">Read more</a>
+
+                                                    <div class="article__buttons">
+                                                        <a href="https://betterstake.netlify.app/">Website</a>
+                                                        <a href="https://github.com/ericduffield/BetterStake">Github</a>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="article col col-4 col-d-6 col-t-12">
+                                            <div class="article__inner">
+
+                                                <div class="article__head">
+
+                                                    <a class="article__image"
+                                                        href="https://jofflobster.itch.io/crime-and-punishment">
+                                                        <img class="" data-src="./Projects/C&PGame/preview.png"
+                                                            src="./Projects/C&PGame/preview.png" alt="C&P Game">
+                                                    </a>
+
+                                                </div>
+
+                                                <div class="article__content">
+
+                                                    <div class="article-tags__box">
+
+                                                        <p class="article__tag">game</p>
+                                                        <p class="article__tag">unity</p>
+                                                        <p class="article__tag">team</p>
+
+                                                    </div>
+
+                                                    <h2 class="article__title">
+                                                        <a href="https://jofflobster.itch.io/crime-and-punishment">C&P
+                                                            Game</a>
+                                                    </h2>
+
+                                                    <p class="article__excerpt">
+                                                        A group of classmates and I created a game for an English class
+                                                        that depicts a scene in Fyodor Dostoevsky's Crime and
+                                                        Punishment. We created this game using C# and Unity. You play as
+                                                        the protagonist and must retrieve an axe and sneak into
+                                                        a pawnbroker's house without arousing suspicion. Once there you
+                                                        have to steal her jewelry and escape without getting
+                                                        caught.
+                                                    </p>
+                                                    <a class="readMore">Read more</a>
+
+                                                    <div class="article__buttons">
+                                                        <a
+                                                            href="https://jofflobster.itch.io/crime-and-punishment">Play</a>
+                                                        <a
+                                                            href="https://github.com/jeffbrin/CrimeAndPunishmentGame">Github</a>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="article col col-4 col-d-6 col-t-12">
+                                            <div class="article__inner">
+
+                                                <div class="article__head">
+
+                                                    <a class="article__image"
+                                                        href="https://github.com/ericduffield/GrowOps">
+                                                        <img class="" data-src="./Projects/GrowOps/preview.png"
+                                                            src="./Projects/GrowOps/preview.png" alt="Grow Ops">
+                                                    </a>
+
+                                                </div>
+
+                                                <div class="article__content">
+
+                                                    <div class="article-tags__box">
+
+                                                        <p class="article__tag">app</p>
+                                                        <p class="article__tag">mobile</p>
+                                                        <p class="article__tag">iot</p>
+
+                                                    </div>
+
+                                                    <h2 class="article__title">
+                                                        <a href="https://github.com/ericduffield/GrowOps">GrowOps</a>
+                                                    </h2>
+
+                                                    <p class="article__excerpt">
+                                                        <strong>GrowOps</strong> is an application used to track and
+                                                        control mobile farming containers. It is connected to a
+                                                        Raspberry Pi which has many actuators that can be controlled by
+                                                        the app including a fan, lights, door locking mechanism,
+                                                        and a buzzer. The Raspberry Pi also has many sensors whose
+                                                        states are displayed in the app including temperature,
+                                                        humidity, GPS, and many more. This app was created with .NET
+                                                        MAUI and can be used on IOS, Android, and Windows.
+                                                    </p>
+                                                    <a class="readMore">Read more</a>
+
+                                                    <div class="article__buttons">
+                                                        <a href="https://github.com/ericduffield/GrowOps">Github</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="article col col-4 col-d-6 col-t-12">
+                                            <div class="article__inner">
+
+                                                <div class="article__head">
+
+                                                    <a class="article__image" href="https://ericduffield.com/">
+                                                        <img class="" data-src="./Projects/Website/preview.jpg"
+                                                            src="./Projects/Website/preview.jpg" alt="Personal Website">
+                                                    </a>
+
+                                                </div>
+
+                                                <div class="article__content">
+
+                                                    <div class="article-tags__box">
+
+                                                        <p class="article__tag">personal</p>
+                                                        <p class="article__tag">web</p>
+                                                        <p class="article__tag">store</p>
+
+                                                    </div>
+
+                                                    <h2 class="article__title">
+                                                        <a href="https://ericduffield.com/">Personal Website</a>
+                                                    </h2>
+
+                                                    <p class="article__excerpt">
+                                                        This is my personal website. I created it as a place where you
+                                                        can learn more about me but it is also used to sell
+                                                        clothes. I created this page for fun to figure out how to create
+                                                        an online store. I don't expect anyone to buy anything,
+                                                        but if you really wanted to you could buy directly from the site
+                                                        as PayPal checkout is integrated and it is completely
+                                                        functional.
+                                                    </p>
+                                                    <a class="readMore">Read more</a>
+
+                                                    <div class="article__buttons">
+                                                        <a href="https://ericduffield.com/">Website</a>
+                                                        <a
+                                                            href="https://github.com/ericduffield/ericduffield.com">Github</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="article col col-4 col-d-6 col-t-12">
+                                            <div class="article__inner">
+
+                                                <div class="article__head">
+
+                                                    <a class="article__image" href="https://duffcoincrypto.com/">
+                                                        <img class="" data-src="./Projects/DuffCoin/preview.png"
+                                                            src="./Projects/DuffCoin/preview.png" alt="Duff Coin">
+                                                    </a>
+
+                                                </div>
+
+                                                <div class="article__content">
+
+                                                    <div class="article-tags__box">
+
+                                                        <p class="article__tag">web3</p>
+                                                        <p class="article__tag">cryptocurrency</p>
+                                                        <p class="article__tag">NFT</p>
+
+                                                    </div>
+
+                                                    <h2 class="article__title">
+                                                        <a href="https://duffcoincrypto.com/">Duff
+                                                            Coin</a>
+                                                    </h2>
+
+                                                    <p class="article__excerpt">
+                                                        I have an interest in cryptocurrency so I decided to create my
+                                                        own token called <strong>DuffCoin</strong> and a website
+                                                        to go with it. I made this purely for fun and to learn how smart
+                                                        contracts work. The smart contract is written in
+                                                        Solidity and was deployed on the Binance Smart Chain. I also
+                                                        made an NFT collection to go with the coin.
+                                                    </p>
+                                                    <a class="readMore">Read more</a>
+
+                                                    <div class="article__buttons">
+                                                        <a href="https://duffcoincrypto.com/">Website</a>
+                                                        <a href="https://github.com/ericduffield/DuffCoin">Github</a>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="article col col-4 col-d-6 col-t-12">
+                                            <div class="article__inner">
+
+                                                <div class="article__head">
+
+                                                    <a class="article__image" href="https://cryptocapys.io/">
+                                                        <img class="" data-src="./Projects/CryptoCapys/preview.png"
+                                                            src="./Projects/CryptoCapys/preview.png" alt="CryptoCapys">
+                                                    </a>
+
+                                                </div>
+
+                                                <div class="article__content">
+
+                                                    <div class="article-tags__box">
+
+                                                        <p class="article__tag">web3</p>
+                                                        <p class="article__tag">NFT</p>
+                                                        <p class="article__tag">team</p>
+
+                                                    </div>
+
+                                                    <h2 class="article__title">
+                                                        <a href="https://cryptocapys.io/">CryptoCapys</a>
+                                                    </h2>
+
+                                                    <p class="article__excerpt">
+                                                        <strong>CryptoCapys</strong> is a collection of capybara-themed
+                                                        NFTs. I worked as a developer on this project creating the
+                                                        website and
+                                                        the smart contract. I also wrote the art generation script used
+                                                        to generate the different combinations of layers.
+                                                    </p>
+                                                    <a class="readMore">Read more</a>
+
+                                                    <div class="article__buttons">
+                                                        <a href="https://cryptocapys.io/">Website</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="article col col-4 col-d-6 col-t-12">
+                                            <div class="article__inner">
+
+                                                <div class="article__head">
+
+                                                    <a class="article__image" href="https://cryptweets.netlify.app/">
+                                                        <img class="" data-src="./Projects/Cryptweets/preview.png"
+                                                            src="./Projects/Cryptweets/preview.png" alt="Cryptweets">
+                                                    </a>
+
+                                                </div>
+
+                                                <div class="article__content">
+
+                                                    <div class="article-tags__box">
+
+                                                        <p class="article__tag">web3</p>
+                                                        <p class="article__tag">twitter</p>
+                                                        <p class="article__tag">NFT</p>
+
+                                                    </div>
+
+                                                    <h2 class="article__title">
+                                                        <a href="https://cryptweets.netlify.app/">Cryptweets</a>
+                                                    </h2>
+
+                                                    <p class="article__excerpt">
+                                                        <strong>Cryptweets</strong> is an NFT project concept that was
+                                                        never released
+                                                        because of legal concerns. I wrote a script that queried
+                                                        the Twitter API for the latest and most popular tweets related
+                                                        to crypto. It then creates NFTs based on each tweet using
+                                                        their metadata. There are different tiers for each of the
+                                                        metrics depending on engagement.
+                                                    </p>
+                                                    <a class="readMore">Read more</a>
+
+                                                    <div class="article__buttons">
+                                                        <a href="https://cryptweets.netlify.app/">Website</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="article col col-4 col-d-6 col-t-12">
+                                            <div class="article__inner">
+
+                                                <div class="article__head">
+
+                                                    <a class="article__image"
+                                                        href="https://github.com/ericduffield/Pokemon">
+                                                        <img class="" data-src="./Projects/Pokemon/preview.png"
+                                                            src="./Projects/Pokemon/preview.png" alt="Pokemon">
+                                                    </a>
+
+                                                </div>
+
+                                                <div class="article__content">
+
+                                                    <div class="article-tags__box">
+
+                                                        <p class="article__tag">game</p>
+                                                        <p class="article__tag">javascript</p>
+
+                                                    </div>
+
+                                                    <h2 class="article__title">
+                                                        <a href="https://github.com/ericduffield/Pokemon">Pokemon</a>
+                                                    </h2>
+
+                                                    <p class="article__excerpt">
+                                                        As part of my Game Programming class, I recreated a
+                                                        <strong>Pokemon</strong>
+                                                        game. A player can battle other Pokemon as well as walk
+                                                        around the world. Using EVs and IVs a level
+                                                        system was implemented which determines how a Pokemon's stats
+                                                        are affected when they level up. This game was created purely
+                                                        with javascript.
+                                                    </p>
+                                                    <a class="readMore">Read more</a>
+
+                                                    <div class="article__buttons">
+                                                        <a href="https://github.com/ericduffield/Pokemon">Github</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="article col col-4 col-d-6 col-t-12">
+                                            <div class="article__inner">
+
+                                                <div class="article__head">
+
+                                                    <a class="article__image"
+                                                        href="https://github.com/ericduffield/Angry-Birds">
+                                                        <img class="" data-src="./Projects/AngryBirds/preview.png"
+                                                            src="./Projects/AngryBirds/preview.png" alt="Angry Birds">
+                                                    </a>
+
+                                                </div>
+
+                                                <div class="article__content">
+
+                                                    <div class="article-tags__box">
+
+                                                        <p class="article__tag">game</p>
+                                                        <p class="article__tag">javascript</p>
+
+                                                    </div>
+
+                                                    <h2 class="article__title">
+                                                        <a href="https://github.com/ericduffield/Angry-Birds">Angry
+                                                            Birds</a>
+                                                    </h2>
+
+                                                    <p class="article__excerpt">
+                                                        As part of my Game Programming class, I recreated <strong>Angry
+                                                            Birds</strong>. I implemented 3 colors of birds. The red
+                                                        bird has no
+                                                        special abilities, the yellow bird speeds up on the press of a
+                                                        key, and the black bird explodes after a timer. I also
+                                                        implemented a star system where you get more stars for the fewer
+                                                        birds used.
+                                                    </p>
+                                                    <a class="readMore">Read more</a>
+
+                                                    <div class="article__buttons">
+                                                        <a href="https://github.com/ericduffield/Angry-Birds">Github</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="article col col-4 col-d-6 col-t-12">
+                                            <div class="article__inner">
+
+                                                <div class="article__head">
+
+                                                    <a class="article__image"
+                                                        href="https://github.com/ericduffield/Farming-App">
+                                                        <img class="" data-src="./Projects/FarmingApp/preview.png"
+                                                            src="./Projects/FarmingApp/preview.png" alt="Farming App">
+                                                    </a>
+
+                                                </div>
+
+                                                <div class="article__content">
+
+                                                    <div class="article-tags__box">
+
+                                                        <p class="article__tag">android</p>
+                                                        <p class="article__tag">mobile</p>
+                                                        <p class="article__tag">app</p>
+
+                                                    </div>
+
+                                                    <h2 class="article__title">
+                                                        <a href="https://github.com/ericduffield/Farming-App">Farming
+                                                            App</a>
+                                                    </h2>
+
+                                                    <p class="article__excerpt">
+                                                        <strong>Farming App</strong>
+                                                        In my Application Development Class, my team and I created an
+                                                        Android app that farmers can use to keep track of their
+                                                        crops and animals. They can add new animals or crops as well as
+                                                        the quantity and date. They can also edit animal or crop
+                                                        information or delete them. This information is stored in an
+                                                        SQLite database.
+                                                    </p>
+                                                    <a class="readMore">Read more</a>
+
+                                                    <div class="article__buttons">
+                                                        <a href="https://github.com/ericduffield/Farming-App">Github</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- begin pagination -->
+                <div class="container animate">
+
+                    <div class="pagination" id="pagination">
+                        <a class="load-more-posts button button--primary">Load More</a>
                     </div>
 
                 </div>
-                <!-- end featured section -->
+                <!-- end pagination -->
 
-            </section>
-            <!-- end hero -->
+            </main>
+            <!-- end content -->
 
+            <!-- begin footer -->
+            <footer class="footer" id="contact">
 
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-12">
 
-            <!-- begin pagination -->
-            <!-- <div class="container animate">
+                            <div class="footer__inner">
 
+                                <div class="social">
+                                    <ul class="social__list list-reset">
 
+                                        <li class="social__item">
+                                            <a class="social__link" href="https://www.linkedin.com/in/ericduffield/"
+                                                target="_blank" rel="noopener" aria-label="Linkedin link"><i
+                                                    class="ion ion-logo-linkedin" style="color: #0A66C2;"></i>
+                                                Linkedin</a>
+                                        </li>
 
-                <div class="pagination">
-                    <button class="load-more-posts button button--primary">Load More</button>
-                </div>
+                                        <li class="social__item">
+                                            <a class="social__link" href="https://github.com/ericduffield"
+                                                target="_blank" rel="noopener" aria-label="Github link"><i
+                                                    class="ion ion-logo-github" style="color: #7D228F;"></i> Github</a>
+                                        </li>
 
-            </div> -->
-            <!-- end pagination -->
+                                        <li class="social__item">
+                                            <a class="social__link" href="https://ericduffield.com/" target="_blank"
+                                                rel="noopener" aria-label="Website link"><i class="ion-md-link"
+                                                    style="color: #bd081c;"></i>
+                                                Website</a>
+                                        </li>
 
+                                        <li class="social__item">
+                                            <a class="social__link" href="https://www.facebook.com/ericduffield0"
+                                                target="_blank" rel="noopener" aria-label="Facebook link"><i
+                                                    class="ion ion-logo-facebook" style="color: #3b5999;"></i>
+                                                Facebook</a>
+                                        </li>
 
+                                        <li class="social__item">
+                                            <a class="social__link" href="https://www.instagram.com/eric_duffield/"
+                                                target="_blank" rel="noopener" aria-label="Instagram link"><i
+                                                    class="ion ion-logo-instagram" style="color: #e4405f;"></i>
+                                                Instagram</a>
+                                        </li>
 
-        </main>
-        <!-- end content -->
+                                    </ul>
+                                </div>
 
-        <!-- begin footer -->
-        <footer class="footer" id="contact">
+                            </div>
 
-            <div class="container">
-                <div class="row">
-                    <div class="col col-12">
-
-                        <div class="footer__inner">
-
-                            <div class="social">
-                                <ul class="social__list list-reset">
-
-                                    <li class="social__item">
-                                        <a class="social__link" href="https://www.linkedin.com/in/ericduffield/"
-                                            target="_blank" rel="noopener" aria-label="Linkedin link"><i
-                                                class="ion ion-logo-linkedin" style="color: #0A66C2;"></i> Linkedin</a>
-                                    </li>
-
-                                    <li class="social__item">
-                                        <a class="social__link" href="https://github.com/ericduffield" target="_blank"
-                                            rel="noopener" aria-label="Github link"><i class="ion ion-logo-github"
-                                                style="color: #7D228F;"></i> Github</a>
-                                    </li>
-
-                                    <li class="social__item">
-                                        <a class="social__link" href="https://ericduffield.com/" target="_blank"
-                                            rel="noopener" aria-label="Website link"><i class="ion-md-link"
-                                                style="color: #bd081c;"></i>
-                                            Website</a>
-                                    </li>
-
-                                    <li class="social__item">
-                                        <a class="social__link" href="https://www.facebook.com/ericduffield0"
-                                            target="_blank" rel="noopener" aria-label="Facebook link"><i
-                                                class="ion ion-logo-facebook" style="color: #3b5999;"></i> Facebook</a>
-                                    </li>
-
-                                    <li class="social__item">
-                                        <a class="social__link" href="https://www.instagram.com/eric_duffield/"
-                                            target="_blank" rel="noopener" aria-label="Instagram link"><i
-                                                class="ion ion-logo-instagram" style="color: #e4405f;"></i>
-                                            Instagram</a>
-                                    </li>
-
-                                </ul>
+                            <div class="footer__info">
+                                <div class="copyright">Eric Duffield &copy; 2023</div>
                             </div>
 
                         </div>
-
-                        <div class="footer__info">
-                            <div class="copyright">Eric Duffield &copy; 2022</div>
-                        </div>
-
                     </div>
                 </div>
-            </div>
 
-        </footer>
-    </div>
+            </footer>
+        </div>
 
-    <script>
-        var base_url = "",
-            pagination_next_url = base_url + '/page2',
-            pagination_next_page_number = '2',
-            pagination_available_pages_number = '3';
-    </script>
+        <script>
+            var base_url = "",
+                pagination_next_url = base_url + '/page2',
+                pagination_next_page_number = '2',
+                pagination_available_pages_number = '3';
+        </script>
 
-</body>
+    </body>
 
 </html>
