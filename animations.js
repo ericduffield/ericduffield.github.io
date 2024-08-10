@@ -88,42 +88,12 @@ $(function () {
 
 function loadMorePosts() {
     if (window.innerWidth > 1024) {
-        if (index == 1) {
-            $(".article").slice(0, 9).show();
-        }
-        else if (index >= 2) {
-            $(".article").slice(0, 12).show();
-        }
+        $(".article").slice(0, 9 + ((index - 1) * 3)).show();
     }
     else if (window.innerWidth > 768) {
-        if (index == 1) {
-            $(".article").slice(0, 8).show();
-        }
-        else if (index == 2) {
-            $(".article").slice(0, 10).show();
-        }
-        else if (index == 3) {
-            $(".article").slice(0, 12).show();
-        }
+        $(".article").slice(0, 8 + ((index - 1) * 2)).show();
     }
     else {
-        if (index == 1) {
-            $(".article").slice(0, 7).show();
-        }
-        else if (index == 2) {
-            $(".article").slice(0, 8).show();
-        }
-        else if (index == 3) {
-            $(".article").slice(0, 9).show();
-        }
-        else if (index == 4) {
-            $(".article").slice(0, 10).show();
-        }
-        else if (index == 5) {
-            $(".article").slice(0, 11).show();
-        }
-        else if (index == 6) {
-            $(".article").slice(0, 12).show();
-        }
+        $(".article").slice(0, 6 + (index)).show();
     }
 }
