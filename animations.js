@@ -97,3 +97,7 @@ function loadMorePosts() {
         $(".article").slice(0, 6 + (index)).show();
     }
 }
+
+let date = new Date();
+let year = date.getFullYear();
+document.getElementById("copyright").innerHTML = 'Eric Duffield &copy; ' + year;
